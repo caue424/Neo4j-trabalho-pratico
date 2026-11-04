@@ -1,0 +1,13 @@
+name,description,query,id,parentId,isFolder,isProtected
+Drafts,,,0,,true,true
+chill,,"//Todas as musicas com o gênero 'chill'
+Match (t:Track)-[h:HAS_GENRE]->(g:Genre)
+WHERE g.genreName = ""chill""
+RETURN t, h, g
+LIMIT 25;",1,0,false,false
+"top 10 ",,"//Quais são as 10 músicas mais populares do gênero 'chill'?
+MATCH (t:Track)-[h:HAS_GENRE]->(g:Genre)
+WHERE g.genreName = ""chill""
+RETURN t.trackName AS Musica, t.popularity AS Popularidade, g.genreName AS Genero
+ORDER BY t.popularity DESC
+LIMIT 10;",2,0,false,false

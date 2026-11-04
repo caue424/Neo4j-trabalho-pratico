@@ -1,0 +1,781 @@
+{
+  "version": "3.0.0",
+  "visualisation": {
+    "nodes": [
+      {
+        "id": "n:0",
+        "position": {
+          "x": -42.12700923633986,
+          "y": 101.88919237658715
+        }
+      },
+      {
+        "id": "n:1",
+        "position": {
+          "x": 8.512178636176003,
+          "y": -71.60449589067035
+        }
+      },
+      {
+        "id": "n:2",
+        "position": {
+          "x": 135.90942436318437,
+          "y": 52.922443504833296
+        }
+      },
+      {
+        "id": "n:3",
+        "position": {
+          "x": -144.02963972718706,
+          "y": 20.039060040738292
+        }
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "3.0.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:0",
+            "token": "Track",
+            "properties": [
+              {
+                "$id": "n:0:acousticness",
+                "token": "acousticness",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:danceability",
+                "token": "danceability",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:duration_ms",
+                "token": "durationMs",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:energy",
+                "token": "energy",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:explicit",
+                "token": "explicit",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:instrumentalness",
+                "token": "instrumentalness",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:key",
+                "token": "key",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:liveness",
+                "token": "liveness",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:loudness",
+                "token": "loudness",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:mode",
+                "token": "mode",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:popularity",
+                "token": "popularity",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:speechiness",
+                "token": "speechiness",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:tempo",
+                "token": "tempo",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:time_signature",
+                "token": "timeSignature",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:track_id",
+                "token": "trackId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "n:0:track_name",
+                "token": "trackName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "n:0:valence",
+                "token": "valence",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:1",
+            "token": "Album",
+            "properties": [
+              {
+                "$id": "n:1:album_name",
+                "token": "albumName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "nl:2",
+            "token": "Artist",
+            "properties": [
+              {
+                "$id": "n:2:artists",
+                "token": "artistName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "nl:3",
+            "token": "Genre",
+            "properties": [
+              {
+                "$id": "n:3:track_genre",
+                "token": "genreName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:0",
+            "token": "BELONGS_TO",
+            "properties": []
+          },
+          {
+            "$id": "rt:1",
+            "token": "PERFORMED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:2",
+            "token": "HAS_GENRE",
+            "properties": []
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:0",
+            "labels": [
+              {
+                "$ref": "#nl:0"
+              }
+            ]
+          },
+          {
+            "$id": "n:1",
+            "labels": [
+              {
+                "$ref": "#nl:1"
+              }
+            ]
+          },
+          {
+            "$id": "n:2",
+            "labels": [
+              {
+                "$ref": "#nl:2"
+              }
+            ]
+          },
+          {
+            "$id": "n:3",
+            "labels": [
+              {
+                "$ref": "#nl:3"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:0",
+            "type": {
+              "$ref": "#rt:0"
+            },
+            "from": {
+              "$ref": "#n:0"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:1",
+            "type": {
+              "$ref": "#rt:1"
+            },
+            "from": {
+              "$ref": "#n:0"
+            },
+            "to": {
+              "$ref": "#n:2"
+            }
+          },
+          {
+            "$id": "r:2",
+            "type": {
+              "$ref": "#rt:2"
+            },
+            "from": {
+              "$ref": "#n:0"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "$id": "c:0",
+            "name": "trackId_Track_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:0"
+            },
+            "properties": [
+              {
+                "$ref": "#n:0:track_id"
+              }
+            ]
+          },
+          {
+            "$id": "c:1",
+            "name": "albumName_Album_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:1"
+            },
+            "properties": [
+              {
+                "$ref": "#n:1:album_name"
+              }
+            ]
+          },
+          {
+            "$id": "c:2",
+            "name": "artistName_Artist_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:2"
+            },
+            "properties": [
+              {
+                "$ref": "#n:2:artists"
+              }
+            ]
+          },
+          {
+            "$id": "c:3",
+            "name": "genreName_Genre_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:3"
+            },
+            "properties": [
+              {
+                "$ref": "#n:3:track_genre"
+              }
+            ]
+          }
+        ],
+        "indexes": []
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:0"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#n:0:track_id"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#n:1:album_name"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#n:2:artists"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#n:3:track_genre"
+            }
+          ]
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": "local",
+        "tableSchemas": [
+          {
+            "name": "dataset - dataset.csv.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "Indice",
+                "sample": "0",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "track_id",
+                "sample": "5SuOikwiRyPMVoIQDJUgSV",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "artists",
+                "sample": "Gen Hoshino",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "album_name",
+                "sample": "Comedy",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "track_name",
+                "sample": "Comedy",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "popularity",
+                "sample": "73",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "duration_ms",
+                "sample": "230666",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "explicit",
+                "sample": "FALSE",
+                "recommendedType": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "danceability",
+                "sample": "676",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "energy",
+                "sample": "461",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "key",
+                "sample": "1",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "loudness",
+                "sample": "-6.746",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "mode",
+                "sample": "0",
+                "recommendedType": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "speechiness",
+                "sample": "143",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "acousticness",
+                "sample": "322",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "instrumentalness",
+                "sample": "1.01e-06",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "liveness",
+                "sample": "358",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "valence",
+                "sample": "715",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "tempo",
+                "sample": "87.917",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "time_signature",
+                "sample": "4",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "track_genre",
+                "sample": "acoustic",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:0"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "acousticness",
+              "property": {
+                "$ref": "#n:0:acousticness"
+              }
+            },
+            {
+              "fieldName": "danceability",
+              "property": {
+                "$ref": "#n:0:danceability"
+              }
+            },
+            {
+              "fieldName": "duration_ms",
+              "property": {
+                "$ref": "#n:0:duration_ms"
+              }
+            },
+            {
+              "fieldName": "energy",
+              "property": {
+                "$ref": "#n:0:energy"
+              }
+            },
+            {
+              "fieldName": "explicit",
+              "property": {
+                "$ref": "#n:0:explicit"
+              }
+            },
+            {
+              "fieldName": "instrumentalness",
+              "property": {
+                "$ref": "#n:0:instrumentalness"
+              }
+            },
+            {
+              "fieldName": "key",
+              "property": {
+                "$ref": "#n:0:key"
+              }
+            },
+            {
+              "fieldName": "liveness",
+              "property": {
+                "$ref": "#n:0:liveness"
+              }
+            },
+            {
+              "fieldName": "loudness",
+              "property": {
+                "$ref": "#n:0:loudness"
+              }
+            },
+            {
+              "fieldName": "mode",
+              "property": {
+                "$ref": "#n:0:mode"
+              }
+            },
+            {
+              "fieldName": "popularity",
+              "property": {
+                "$ref": "#n:0:popularity"
+              }
+            },
+            {
+              "fieldName": "speechiness",
+              "property": {
+                "$ref": "#n:0:speechiness"
+              }
+            },
+            {
+              "fieldName": "tempo",
+              "property": {
+                "$ref": "#n:0:tempo"
+              }
+            },
+            {
+              "fieldName": "time_signature",
+              "property": {
+                "$ref": "#n:0:time_signature"
+              }
+            },
+            {
+              "fieldName": "track_id",
+              "property": {
+                "$ref": "#n:0:track_id"
+              }
+            },
+            {
+              "fieldName": "track_name",
+              "property": {
+                "$ref": "#n:0:track_name"
+              }
+            },
+            {
+              "fieldName": "valence",
+              "property": {
+                "$ref": "#n:0:valence"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "album_name",
+              "property": {
+                "$ref": "#n:1:album_name"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "artists",
+              "property": {
+                "$ref": "#n:2:artists"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "track_genre",
+              "property": {
+                "$ref": "#n:3:track_genre"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:0"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "fromMappings": {
+            "#n:0:track_id": "track_id"
+          },
+          "toMappings": {
+            "#n:1:album_name": "album_name"
+          },
+          "propertyMappings": []
+        },
+        {
+          "relationship": {
+            "$ref": "#r:1"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "fromMappings": {
+            "#n:0:track_id": "track_id"
+          },
+          "toMappings": {
+            "#n:2:artists": "artists"
+          },
+          "propertyMappings": []
+        },
+        {
+          "relationship": {
+            "$ref": "#r:2"
+          },
+          "tableName": "dataset - dataset.csv.csv",
+          "fromMappings": {
+            "#n:0:track_id": "track_id"
+          },
+          "toMappings": {
+            "#n:3:track_genre": "track_genre"
+          },
+          "propertyMappings": []
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": [],
+      "arrayDelimiter": "|",
+      "vectorDelimiter": "|"
+    }
+  }
+}
